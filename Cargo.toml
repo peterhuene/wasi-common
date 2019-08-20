@@ -24,7 +24,7 @@ filetime = "0.2.7"
 nix = "0.13"
 
 [target.'cfg(windows)'.dependencies]
-winx = { path = "winx" }
+winx = { path = "winx", version = "0.1.0" }
 winapi = "0.3"
 
 [dev-dependencies]
