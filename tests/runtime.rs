@@ -1,3 +1,6 @@
+// Temporarily disabled to avoid recursive dependencies for publishing
+// on crates.io.
+/*
 use cranelift_codegen::settings;
 use wasmtime_jit::Context;
 
@@ -54,3 +57,4 @@ pub fn instantiate<S: AsRef<str>>(
             )
         })
 }
+*/

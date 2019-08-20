@@ -28,10 +28,12 @@ winx = { path = "winx", version = "0.1.0" }
 winapi = "0.3"
 
 [dev-dependencies]
-wasmtime-runtime = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
-wasmtime-environ = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
-wasmtime-jit = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
-wasmtime-wasi = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
+# Temporarily disabled to avoid recursive dependencies for publishing
+# on crates.io.
+#wasmtime-runtime = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
+#wasmtime-environ = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
+#wasmtime-jit = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
+#wasmtime-wasi = { git = "https://github.com/cranestation/wasmtime", rev = "44367ba" }
 cranelift-codegen = "0.40.0"
 cranelift-entity = "0.40.0"
 cranelift-wasm = "0.40.0"
@@ -39,8 +41,10 @@ cranelift-native = "0.40.0"
 target-lexicon = "0.4.0"
 pretty_env_logger = "0.3.0"
 
-[patch."https://github.com/CraneStation/wasi-common"]
-wasi-common = { path = "." }
+# Temporarily disabled to avoid recursive dependencies for publishing
+# on crates.io.
+#[patch."https://github.com/CraneStation/wasi-common"]
+#wasi-common = { path = "." }
 
 [build-dependencies]
 cfg-if = "0.1.9"
