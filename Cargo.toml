@@ -12,7 +12,7 @@ description = "WASI implementation in Rust"
 exclude = ["misc_testsuite/*.wasm"]
 
 [dependencies]
-wasi-common-cbindgen = { path = "wasi-common-cbindgen" }
+wasi-common-cbindgen = { path = "wasi-common-cbindgen", version = "0.1.0" }
 failure = "0.1"
 libc = "0.2"
 rand = "0.6"
