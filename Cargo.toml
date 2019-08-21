@@ -1,6 +1,6 @@
 [package]
 name = "wasi-common"
-version = "0.1.0"
+version = "0.2.0"
 authors = [
     "Adam C. Foltzer <acfoltzer@fastly.com>",
     "Frank Denis <github@pureftpd.org>",
@@ -12,7 +12,7 @@ description = "WASI implementation in Rust"
 exclude = ["misc_testsuite/*.wasm"]
 
 [dependencies]
-wasi-common-cbindgen = { path = "wasi-common-cbindgen", version = "0.1.0" }
+wasi-common-cbindgen = { path = "wasi-common-cbindgen", version = "0.2.0" }
 failure = "0.1"
 libc = "0.2"
 rand = "0.6"
@@ -24,7 +24,7 @@ filetime = "0.2.7"
 nix = "0.13"
 
 [target.'cfg(windows)'.dependencies]
-winx = { path = "winx", version = "0.1.0" }
+winx = { path = "winx", version = "0.2.0" }
 winapi = "0.3"
 
 [dev-dependencies]
